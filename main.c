@@ -21,16 +21,14 @@ int main()
                 scanf("%d",&i);
                 scanf("%d",&j);
                 temp=isThereRoute(mat, i, j);
-                if (temp==1){printf("true\n");}
-                else printf("false\n");
+                if (temp==1){printf("True\n");}
+                else printf("False\n");
                 break;
 
             case 'C':
                 scanf("%d",&i);
                 scanf("%d",&j);
-                temp=smallestRoute(mat, i, j);
-                if (temp!=0){printf("%d\n",temp);}
-                else printf("%d\n",-1);
+                smallestRoute(mat, i, j);
                 break;
 
             case 'D':
